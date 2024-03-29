@@ -1,0 +1,49 @@
+• Open Computer Vision - developed by Intel
+• Python Open Source Library used for Machine Learning contains ML algorithms 
+• Its natively written in C++
+• Computer Vision is a interdisiplinary field of AI ML and DL - to give high level understanding of image and video
+• Tasks performed are -
+    ○ Object Classification, Tracking, Recognition 
+    ○ Image Restoration 
+    ○ Video Motion Analysis 
+    
+• Digital Image - 2D matrix of f(x,y) where x and y are called spatial co-ordinates.
+• For a n - bit image we have 2^n values, so for 1 bit image we have 2^1 values (black / white). so for a 8 bit image we have 2^8 = 256 values (0-255)
+• Analog Image are imgaes that are recorded via films and they need to be transformed to digital images using SCANNER so that image proecessing can be done on it.
+• PPI (Pixel Per Inch) ∝ Resolution
+• 
+
+There are 2 types of images -
+    ○ Binary Images - Either 0 or 1 for each pixel  
+    ○ Grayscale Images - Contains single channel - Each matrix cell represent how dark(0) - bright(255) the cell is
+    ○ RBG Images - Contains 3 channel - 2D matrix for each channel - one for Red, one for Green and one for Blue and each matrix contains values 0 - 255. When the matices superimpose we get a colored image - Achieved by RBG model (additive model)
+    ○ Digital images do use Grayscale and CMYK while CMYK(subtractive color model) is used in printing purposes
+    ○ NOTE - opencv uses BGR instead of RBG so you need to convert to RGB before displaying 
+
+• Domain of Computer Vision 
+- Computer Graphics (3D models like game characters) 
+- Physics (includes optics)
+- Mathematics (fourier transform and laplace transform)
+- Sensor (Depth Sensor, Heat Sensor etc)
+- Image Processing (Enhancement, Restoration etc)
+
+OPEN CV MODULES
+• imgproc - For Image Processing
+• dnn - to load serailised network models
+• ml - used for ml 
+• video - object tracking
+• highgui - to display images
+• features2D - to track features in image
+• flann - does this feature in one image exist in the other image
+• stiching - video panorama like feature which stiches multiple images into one
+• shape - does this image contain the shape or not 
+• superres - image resolution enhancement
+• videostab - to stabilise video
+• viz - to interact with 3D models
+• imgcodecs - determine image coding scheme like jpeg jpg png etc
+• objdetect - to detect object like eye, person, car etc
+• calib3 - for camera calibration and 3D restruction 
+
+WHY WE IMPORT CV2 IN OPENCV?
+When OpenCV was brought into Python, there was already a module named "cv," causing confusion. To avoid this, OpenCV was named "cv2" in Python. Eventually, the original "cv" module became outdated and stopped functioning, making "cv2" the preferred choice for working with OpenCV in Python.
+
